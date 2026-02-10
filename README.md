@@ -1,3 +1,3 @@
 ekreynolds2@gmail.com
 
-https://Reynoess000.github.io/My-GitHub-Projects
+https://github.com/Reynoess000/My-GitHub-Projects
