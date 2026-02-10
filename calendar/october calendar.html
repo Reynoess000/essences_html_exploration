@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>October</title>
+        <style>
+            .month {
+                text-align: center;
+                text-shadow: 10px 10px 10px gray;
+                height: 180px;
+                width: 800px;
+                background-image: url(images/header.jpeg);
+                background-size: cover;
+                background-position: center;
+                margin: 0 auto;
+            }
+            table {
+                width: 800px;
+                table-layout: auto;
+                border-collapse: collapse;
+                margin: 0 auto;
+            }
+            th, td {
+                width: 70px;
+                height: 70px;
+                border: 1px solid black;
+                padding: 5px;
+                position: relative;
+                vertical-align: top;
+                text-align: right;
+                font-size: 12px;
+                font-weight: bold;
+            }
+            .day th {
+                height: 20px;
+                text-align: center;
+            }
+            td p {
+                margin: 0;
+                text-align: center;
+                font-weight: bold;
+                padding-top: 20px;
+                background-color: rgba(0, 0, 0, 0.5); 
+                color: white;
+                padding: 2px 5px;
+                display: inline-block;
+            }
+            .coffee, .birthday, .halloween {
+                background-size: cover;
+                background-position: center;
+                font-weight: bold;
+                position: relative;
+            }
+            .birthday {
+                background-image: url(images/birthday.jpeg);
+            }
+            .halloween {
+                background-image: url(images/halloween.jpeg);
+            }
+            .coffee {
+                background-image: url(images/coffee.webp);
+            }
+            .previous-month {
+                background-color: lightgray;
+            }
+            .date {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                font-size: 12px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="month">
+            <h1> October 2024 </h1>
+        </div>
+        <table>
+            <tr class="day">
+                <th> Sun </th>
+                <th> Mon </th>
+                <th> Tue </th>
+                <th> Wed </th>
+                <th> Thu </th>
+                <th> Fri </th>
+                <th> Sat </th>
+            </tr>
+            <tr>
+                <td class="previous-month">
+                    <div class="date">29</div>
+                </td>
+                <td class="previous-month">
+                    <div class="date">30</div>
+                </td>
+                <td class="coffee">
+                    <div class="date">1</div>
+                    <p>National Coffee Day</p>
+                </td>
+                <td class="birthday">
+                    <div class="date">2</div>
+                    <p>My Birthday</p>
+                </td>
+                <td>
+                    <div class="date">3</div>
+                </td>
+                <td>
+                    <div class="date">4</div>
+                </td>
+                <td>
+                    <div class="date">5</div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="date">6</div></td>
+                <td><div class="date">7</div></td>
+                <td><div class="date">8</div></td>
+                <td><div class="date">9</div></td>
+                <td><div class="date">10</div></td>
+                <td><div class="date">11</div></td>
+                <td><div class="date">12</div></td>
+            </tr>
+            <tr>
+                <td><div class="date">13</div></td>
+                <td><div class="date">14</div></td>
+                <td><div class="date">15</div></td>
+                <td><div class="date">16</div></td>
+                <td><div class="date">17</div></td>
+                <td><div class="date">18</div></td>
+                <td><div class="date">19</div></td>
+            </tr>
+            <tr>
+                <td><div class="date">20</div></td>
+                <td><div class="date">21</div></td>
+                <td><div class="date">22</div></td>
+                <td><div class="date">23</div></td>
+                <td><div class="date">24</div></td>
+                <td><div class="date">25</div></td>
+                <td><div class="date">26</div></td>
+            </tr>
+            <tr>
+                <td><div class="date">27</div></td>
+                <td><div class="date">28</div></td>
+                <td><div class="date">29</div></td>
+                <td><div class="date">30</div></td>
+                <td class="halloween">
+                    <div class="date">31</div>
+                    <p>Halloween</p>
+                </td>
+                <td class="previous-month">
+                    <div class="date">1</div>
+                </td>
+                <td class="previous-month">
+                    <div class="date">2</div>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

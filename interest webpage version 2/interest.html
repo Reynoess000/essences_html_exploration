@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Quokkas & Hyraxes: Long-Lost Cousins? </title>
+    <style>
+        @font-face {
+            font-family: 'Indie Flower';
+            src: url('indie_flower/IndieFlower-Regular.ttf');
+        }
+        
+        body {
+            background-color: rgb(202, 164, 207);
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header {
+            background-image: url('img/interest\ header.jpg');
+            height: 400px;
+            width: 800px;
+            background-size: cover;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            text-shadow: 3px 3px 3px #ffffff;
+        }
+
+        h1 {
+            padding-top: 20px;
+            margin-bottom: 0;
+            color: rgb(0, 0, 0);
+            background-color: rgba(97, 5, 83, 0.7);
+            font-family: 'Indie Flower', cursive;
+        }
+
+        .main_container {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: lightgray;
+        }
+
+        .content {
+            flex: 3;
+            padding: 20px;
+            background-color: lightpink;
+        }
+
+        .sidebar {
+            flex: 1;
+            padding: 10px;
+            background-color: lightcoral;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .sidebar img {
+            width: 220px;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+
+        .caption {
+            text-align: center;
+            font-size: 12px;
+            margin-bottom: 20px;
+            visibility: hidden;
+        }
+
+        .sidebar img:hover + .caption {
+            visibility: visible;
+        }
+
+        h2 {
+            font-weight: bold;
+            font-family: 'Indie Flower', cursive;
+        }
+
+        img {
+            width: 250px; 
+            height: 200px;
+            float: right;
+            margin: 20px;
+        }
+
+        .footer {
+            background-color: rgb(111, 11, 89);
+            margin: 30px auto 0 auto;
+            padding: 30px;
+            width: 100%;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 10px;
+            margin: 5px;
+            background-color: lightcoral;
+            color: white;
+        }
+
+        nav a:hover {
+            background-color: darkred;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: lightcoral;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <h1> Quokkas & Hyraxes: Long-Lost Cousins? </h1>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="dropdown">
+            <a href="#"> Home </a>
+            <div class="dropdown-content">
+                <a href="#quokkas"> Quokkas </a>
+                <a href="#hyraxes"> Hyraxes </a>
+                <a href="#faceoff"> Face-Off </a>
+            </div>
+        </div>
+        <a href="gallery.html"> Gallery </a>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="main_container">
+        <div class="content">
+            <!-- Quokka Section -->
+            <div id="quokkas">
+                <h2> Meet the Quokka: The Perpetual Optimist </h2>
+                <img src="img/quokka twins.jpg" alt="A couple of cheesing quokkas" /> 
+                <p> Quokkas are like the eternal optimists of the animal kingdom. Native to Australia, these little marsupials are famous for their almost magical ability to look like they’re smiling 24/7. They thrive on Rottnest Island, where they’ve become the unofficial "selfie royalty," posing for pictures with curious tourists.</p>
+                <p> Don’t be fooled by their smiles, though. Quokkas are tough little survivors who can go for long periods without drinking water. They get most of their hydration from the plants they eat, making them well-adapted to dry environments.</p>
+                <p> Want to learn more about Quokkas? Check out this <a href="https://www.natureaustralia.org.au/what-we-do/our-priorities/wildlife/wildlife-stories/meet-the-quokka/#:~:text=Overall%20the%20species%20is%20listed,fire%20patterns%20and%20habitat%20loss.">link</a>!</p>
+            </div>
+            <!-- Hyrax Section -->
+            <div id="hyraxes">
+                <h2> Meet the Hyrax: The Master of the Mountains </h2>
+                <img src="img/hyrax+feet.jpg" alt="Hyraxes and their cool feet" /> 
+                <p> Hyraxes might look like fluffy little couch potatoes, but these guys are mountaineering pros. Found chilling in rocky outcrops across Africa and the Middle East, hyraxes spend their days basking in the sun and dodging predators like eagles.</p>
+                <p> Hyraxes have unique feet with rubbery soles that help them climb steep rocks with ease. These agile creatures can scale cliffs and balance on ledges, making them some of the most underrated rock climbers in the animal world.</p>
+                <p> Interested in Hyraxes? Check out this <a href="https://www.awf.org/wildlife-conservation/hyrax">link</a>!</p>
+            </div>
+        <!-- Face-Off Section -->
+            <div id="faceoff">
+                <h2> Quokka vs. Hyrax: The Fluffy Face-Off </h2>
+                <p> It’s time for the ultimate showdown between two adorable yet wildly different creatures. Quokkas may have won the Internet with their selfies, but Hyraxes are the unsung heroes of the animal kingdom. Both are small, fluffy, and cute, but that’s where the similarities end.</p>
+                <p> Who would win in a battle of personality? Quokkas bring charm and photo ops, while Hyraxes dominate the wilderness with their climbing skills. The real question is: can a selfie beat sheer rock-climbing prowess?</p>
+                <ul>
+                <img src="img/hyrax v quokka.jpg" alt="funny comparison of quokkas and hyraxes">
+                    <li><b>Smile Factor:</b> Quokkas have a permanent grin. Hyraxes, not so much.</li>
+                    <li><b>Surprise Relative:</b> Hyraxes are related to elephants, while quokkas stick to their marsupial fam.</li>
+                    <li><b>Instagrammable:</b> Quokkas rule the selfie world. Hyraxes prefer life off the grid.</li>
+                    <li><b>Vacation Vibes:</b> Hyraxes love lounging on rocks. Quokkas are all about hopping around.</li>
+            </ul>
+            <p> Who do you think won?</p>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <img class="sidebar img" src="img/silly hyrax.jpg" alt="hyrax sticking out its tongue" />
+            <div class="caption"> Hyraxes may not smile as often but they're still silly!</div>
+
+            <img class="sidebar img" src="img/selfie.jpg" alt="quokka taking a selfie"/>
+            <div class="caption"> You can't touch quokkas because they're a protected species, but they love taking photos with island guests.</div>
+
+            <img class="sidebar img" src="img/happy hyrax.jpg" alt="hyrax smiling on a rock" />
+            <div class="caption"> I don't know what it is about these rocks but hyraxes adore them. </div>
+        </div>
+    </div>
+    
+    <!-- Footer Section -->
+    <div class="footer">
+    </div>
+</body>
+</html>

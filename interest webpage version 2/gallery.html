@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Photo Gallery: Quokkas & Hyraxes </title>
+    <style>
+        @font-face {
+            font-family: 'Indie Flower';
+            src: url('indie_flower/IndieFlower-Regular.ttf');
+        }
+
+       body {
+            background-color: rgb(202, 164, 207);
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header {
+            background-image: url('img/header.jpg');
+            height: 400px;
+            width: 800px;
+            background-size:contain;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            text-shadow: 3px 3px 3px #ffffff;
+        }
+
+        h1 {
+            padding-top: 20px;
+            margin-bottom: 0;
+            color: rgb(0, 0, 0);
+            background-color: rgba(97, 5, 83, 0.7); 
+        }
+
+        .gallery-container {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: white;
+            flex-wrap: wrap;
+        }
+
+        .large-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 60%;
+        }
+
+        .large-img {
+            width: 48%;
+            height: 20%;
+            margin-bottom: 20px;
+            background-color: lightcoral;
+        }
+
+        .small-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 35%;
+        }
+
+        .small-img {
+            width: 100%;
+            height: 80%;
+            margin-bottom: 10px;
+            background-color: lightgreen;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 10px;
+            margin: 5px;
+            background-color: lightcoral;
+            color: white;
+        }
+
+        nav a:hover {
+            background-color: darkred;
+        }
+
+        .footer {
+            background-color: rgb(111, 11, 89);
+            margin: 30px auto 0 auto;
+            padding: 30px;
+            width: 100%;
+        }
+        .large-container div, .small-container div {
+            position: relative; 
+            width: 48%;
+            margin-bottom: 20px;
+        }
+        .small-container div {
+            width: 100%; /* Full width for small container */
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+        }
+
+       .caption {
+            visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Overlay effect */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            border-radius: 10px;
+            }
+        
+            div:hover .caption {
+    visibility: visible;
+    opacity: 1;
+            }
+
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <h1> Quokkas & Hyraxes: A Photo Journey </h1>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="interest.html"> Home </a>
+        <a href="gallery.html"> Gallery </a>
+    </nav>
+
+    <!-- Gallery Container -->
+    <div class="gallery-container">
+        <!-- Large Images -->
+        <div class="large-container">
+            <div>
+                <img src="img/gallery/large-img-1.jpeg" alt="Hyrax sticking out its tongue" />
+                <div class="caption"> Caption </div>
+            </div>
+            <div>
+                <img src="img/gallery/large-img-2.jpeg">
+                <div class="caption"> Caption </div>
+            </div>
+            <div>
+                <img src="img/gallery/large-img-3.jpeg">
+                <div class="caption"> Caption </div>
+            </div>
+            <div>
+                <img src="img/gallery/large-img-4.jpeg">
+                <div class="caption"> Caption </div>
+            </div>
+            <div>
+                <img src="img/gallery/large-img-5.jpeg">
+                <div class="caption"> Caption </div>
+            </div>
+            <div>
+                <img src="img/gallery/large-img-6.jpeg">
+                <div class="caption"> Caption </div>
+            </div>
+        </div>
+
+        <!-- Small Images -->
+        <div class="small-container">
+            <div>
+                <img src="img/gallery/small-img-1.jpeg">
+                <div class="caption"> Caption </div>
+            </div>
+            <div>
+                <img src="img/gallery/small-img-2.jpeg">
+                <div class="caption"> Caption </div>
+            </div>
+            <div>
+                <img src="img/gallery/small-img-3.jpeg">
+                <div class="caption"> Caption </div>
+            </div>
+            <div>
+                <img src="img/gallery/small-img-4.jpeg">
+                <div class="caption"> Caption </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section -->
+    <div class="footer">
+    </div>
+</body>
+</html>
