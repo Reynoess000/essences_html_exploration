@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> My Puzzle </title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 602px; 
+            margin: 0 auto;
+            position: relative;
+        }
+        .puzzle {
+            width: 300.5px;
+            height: auto;
+        }
+        .tmoved{
+            position: relative;
+            top: -10px; 
+            left: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .bmoved{
+            position: relative;
+            bottom: -10px;
+            right: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+<h1> Prancing Michael Cera! </h1>
+
+<div class="container">
+    <img src="cera/row-1-column-1-2.jpg" alt="Piece 1" class="puzzle">
+    <img src="cera/row-1-column-2-2.jpg" alt="Piece 2" class="tmoved">
+    <img src="cera/row-2-column-1.jpg" alt="Piece 3" class="puzzle">
+    <img src="cera/row-2-column-2.jpg" alt="Piece 4" class="puzzle">
+    <img src="cera/row-3-column-1.jpg" alt="Piece 5" class="bmoved">
+    <img src="cera/row-3-column-2.jpg" alt="Piece 6" class="puzzle">
+</div>
+
+</body>
+</html>
